@@ -63,8 +63,8 @@ const newAnchor2 = document.createElement("a");
 newAnchor1.textContent = "Come Here";
 newAnchor2.textContent = "Go Away";
 
-newAnchor1.style.color = "green";
-newAnchor2.style.color = "green"; 
+newAnchor1.style.color = "slateblue";
+newAnchor2.style.color = "mediumorchid"; 
 
 
 navBar.appendChild(newAnchor2);
@@ -94,7 +94,7 @@ bottomPars[1].innerText = siteContent['main-content']['services-content'];
 bottomPars[2].innerText = siteContent['main-content']['services-content']; 
 
 const cta1 = document.querySelector('.cta-text h1');
-
+cta1.style.color = "mediumorchid"; 
 let ctaArray = siteContent['cta']['h1'].split(" ");
 
 ctaArray.splice(1,0, "\r\n");
@@ -106,7 +106,9 @@ const cta_button = document.querySelector('.cta button');
 
 cta_button.innerText = "ASK GURU";
 
-const contactH4 = document.querySelector('.contact h4');
+cta_button.style.color = "aquamarine"; 
+
+let contactH4 = document.querySelector('.contact h4');
 contactH4.innerText = siteContent['contact']['contact-h4'];
 
 const contactPar = document.querySelectorAll('.contact p');
@@ -122,6 +124,11 @@ contactPar[2].innerText = siteContent['contact']['email'];
 const footerPart = document.querySelector("footer p");
 
 footerPart.innerText = siteContent['footer']['copyright'];
+
+footerPart.style.color = "slateblue";
+
+
+
 
 
 
