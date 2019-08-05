@@ -47,7 +47,7 @@ ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
 let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
-let navBar = document.querySelector("nav");
+
 
 let navAnchors = document.querySelectorAll("a");
 
@@ -66,15 +66,19 @@ newAnchor2.textContent = "Go Away";
 newAnchor1.style.color = "slateblue";
 newAnchor2.style.color = "mediumorchid"; 
 
-
+let navBar = document.querySelector("nav");
 navBar.appendChild(newAnchor2);
 
 navBar.prepend(newAnchor1); 
 
 const topH4 = document.querySelectorAll(".top-content .text-content h4");
 
+topH4[0].style.color = 'mediumorchid';
+topH4[1].style.color = 'slateblue';
 topH4[0].innerText = siteContent['main-content']['features-h4'];
 topH4[1].innerText = siteContent['main-content']['about-h4'];
+
+
 
 const topPar = document.querySelectorAll('.top-content .text-content p');
 
